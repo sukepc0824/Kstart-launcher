@@ -43,7 +43,7 @@ $(function () {
         }, {
             name: "facebook",
             icon: "img/icon/facebook.svg",
-            command: "",
+            command: "/f ",
             url: {
                 suggest: "",
                 search: "https://www.facebook.com/search/?q=",
@@ -241,6 +241,9 @@ $(function () {
                     break
                 case "/x ":
                     return engineData.find(e => e.command === "/x ")
+                    break
+                case "/f ":
+                    return engineData.find(e => e.command === "/f ")
                     break
                 default:
                     return engineData.find(e => e.name === "google")
